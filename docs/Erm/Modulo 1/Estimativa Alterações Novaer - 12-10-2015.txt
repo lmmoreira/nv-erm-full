@@ -1,0 +1,73 @@
+﻿•	No orçamento, escrevemos que haveria uma alerta de réplica de P/N assim que um usuário inserir um P/N duplicado. 
+	É permitido ter P/Ns iguais, mas deve haver uma alerta ao cadastrar um P/N duplicado. "P/N existente. Deseja realmente cadastrar o material?" 
+	
+		FEITO!
+		Valor: 1 hora.
+
+•	Mudar o nome da coluna "Autor" para "Solicitante" em todos os cadastros e listagens
+		FEITO!
+		Valor: 0 hora
+
+•	Adicionar a coluna Solicitante na tabela de listagem de Cadastros Especiais
+		FEITO!
+		Valor: 0 hora
+
+•	Menu Principal - Clicar para abrir o menu ao inves de mouseover.
+
+		DEMOVIDO!
+		Obs.: Preciso pesquisar a possibilidade. Não tenho certeza se é possível.
+
+•	Aparecer descrição de cada Processo Especial ao passar com o mouse por cima do item na da checkbox.
+		FEITO!
+		Obs.: Preciso Pesquisar a possibilidade, pois como são checkboxes dentro de um list.
+
+•	Pedido por eles: Há a possiblidade de remover paginação e usar o cache nivel 2 para tomar conta do problema de sobrecarga no servidor? Precisamos ver o maior númerdo de cadastros por tela possível.
+
+		DEMOVIDO!
+		Obs.: Não faz sentido nenhum este pedido em relação a performance, ou cache nivel 2. Não tem nada haver uma coisa com a outra.
+				A paginação serve exatamente para que não seja necessário carregar todos os registros de uma vez, exatamente para não sobrecarregar o servidor.
+				O cache sempre é usado.
+
+		Valor: 2 horas
+
+•	Adicionar a columa "Solicitante" na exportação de excel de Materiais/Fornecedores Pendentes/Rejeitados/Aprovados
+		FEITO!
+		Valor: 2 horas
+
+•	Assim que um aprovador rejeitar o cadastro, move-lo para rejeitados.
+		FEITO!
+		Obs.: Acho que isto já está acontecendo 
+
+•	O autor de um cadastro em aprovação poderá editar os campos básicos do cadastro até que o primeiro aprovador realizar a aprovação do registro.
+
+		FEITO!
+		Valor: 6 horas.
+		
+•	Fazer com que um cadastro em aprovação seja aprovado somente quando todos os aprovadores realizarem a aprovação. 
+		FEITO!
+		FEITO!
+		Valor: 8 horas - Para Materiais
+		Valor: 8 horas - Para Fornecedores
+
+•	"Peço por gentileza orçar a seguinte funcionalidade para o banco de dados Material Master:
+
+		- permitir a importação de dados de planilha excel para todos as tabelas de cadastro."
+
+		Importação
+			Tecnologia - Valor 6 horas - FEITO!
+			Categoria - Valor : 6 horas - FEITO!
+			Processos Especiais - Valor: 8 horas - FEITO!
+			Unidade Fornecedor - Valor 6 horas - FEITO!
+			Unidade Lote Fornecedor - Valor 6 horas - FEITO!
+			Unidade Lote - Valor 6 horas - FEITO!
+			Usuários - Valor : 8 horas - FEITO!
+			Fornecedores - Valor: 14 horas - FEITO! - Serão cadastrados apenas pendentes ? Todos entrarão de forma pendente?
+			
+			Materiais - Valor: 20 horas - Serão cadastrados apenas pendentes ? Todos entrarão de forma pendente?			
+			
+Total de Horas 	107	- R$ 6420	
+			
+		
+		
+		
+		

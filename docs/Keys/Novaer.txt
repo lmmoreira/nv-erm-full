@@ -1,0 +1,8 @@
+NOVAER.DDNS.NET:1389
+fernando.sistema
+Fer.1010
+Temp1414
+**
+http://localhost/phpmyadmin/
+root
+2u3r892yhr98

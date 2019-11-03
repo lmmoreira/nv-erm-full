@@ -1,0 +1,33 @@
+ public void handleFileUpload(FileUploadEvent event) { 
+       
+       UploadedFile uploadedFile = event.getFile();
+       
+       if (streamUploadEnabled) {
+          contentIn = null;
+          streamIn = new FileStreamInVO();
+           streamIn.setFileName(uploadedFile.getFileName());
+           streamIn.setMimeType(uploadedFile.getContentType());
+           streamIn.setSize(uploadedFile.getSize());
+           try {
+             streamIn.setStream(uploadedFile.getInputstream());
+             addOperationSuccessMessage(FacesMessageCodes.UPLOAD_OPERATION_SUCCESSFUL);
+          } catch (IOException e) {
+             streamIn = null;
+             Messages.addMessage(FacesMessage.SEVERITY_ERROR, e.getMessage());
+             return;
+          }
+       } else {
+          streamIn = null;
+          contentIn = new FileContentInVO();
+          contentIn.setFileName(uploadedFile.getFileName());
+          contentIn.setMimeType(uploadedFile.getContentType());
+          contentIn.setDatas(uploadedFile.getContents());
+          addOperationSuccessMessage(FacesMessageCodes.UPLOAD_OPERATION_SUCCESSFUL);
+       }
+       
+       if (!(in.getTitle() != null && in.getTitle().length() > 0) || in.getTitle().equals(Messages.getFacesString(FacesMessageCodes.FILE_TITLE_PRESET))) {
+          in.setTitle(uploadedFile.getFileName());
+       }
+       
+ 
+    }

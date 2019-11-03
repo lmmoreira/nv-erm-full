@@ -1,0 +1,64 @@
+Novaer
+
+Importação de PN
+
+	- Fornecedor não obrigatório - 0hs
+	- Processo especial não obrigatório - 0hs
+	- PN não obrigatório - 0hs
+	- Adicionar ao log de importação informação de registros duplicados com detalhes do registro - 2hs
+
+Importação de PN - Update de dados
+	- Edição de dados de PN na importação - 6hs
+	
+Tela de PN
+
+	- Colocar o campo autor depois da descrição - 1hs
+	- Administrador pode alterar o autor - 2hs
+	- Alteração de Perfil de GP - dar os mesmos poderes do adminsitrador para ele - 2hs
+	- Label informando os usuários selecionados a frente do combo de aprovadores - 0,5
+	- Aumentar o campo PN, Descrição e Fornecedor - 1hs
+	- Voltar para a tela anterior do material depois que salva, se possível mesmo filtro - 0hs
+	
+	Visão de Compras
+			- Adicionar campo NCM - Adicionar tanto nas viões, exportações, grids, e etc - Texto - 2hs
+			- Adicionar campo PN da Matéria Prima - Adicionar tanto nas viões, exportações, grids, e etc - Texto - 2hs
+			- Adicionar campo Qtde do Material de Compra - Adicionar tanto nas viões, exportações, grids, e etc - Memo - 2hs
+	
+Todo o sistema
+
+	- Retirar TODOS os campos ID dos grids do sistema - 4hs
+	- Fixar barra de cima e barra de baixo dos grids - 8hs
+	- Ao deletar um registro quando está filtrado, não está atualizando o grid - 0hs
+	- Retirar exportação de Pdf do sistema - 2hs
+	- Padronizar todos os campos do sistema com entrada de maiuscula - 10hs
+	
+Tela de Materiais e Fornecedores
+	- Fazer o titulo bater certinho - Pendente, Aprovado, Reprovado - 0hs
+	
+Tela de Cadastro de Fornecedor
+		- Aumentar campo Razão - 0hs
+		- Aumentar campo Contato - 0hs
+		- Aumentar campo e-mail - 0hs
+		- Label informando os usuários selecionados a frente do combo de aprovadores - 0,5
+		
+		- IQF virou ISQF - Tanto nas importações, exportações, visão, e edição - 1hs
+		- IQP virou IQFP - Tanto nas importações, exportações, visão, e edição - 1hs
+		- IDE virou IQFN - Tanto nas importações, exportações, visão, e edição, também virará um calculo - 0,4 * ISQF + 0,6 * IQFP - 2hs
+		
+		- Ferramenta para voltar os Fornecedores Rejeitados para Pendentes - 2hs
+		- Colocar um aviso na tela principal assim como de aprovação quando houver reavaliação de fornecedor - 2hs
+		
+Tela de Processo Especial
+		- Criar um campo Sequencial "NCode" para a tela de processo especial. Lembraer das Importações, visões, exportações e edições - 2hs
+		
+		
+	47 - 3300
+		
+		
+		
+		
+		
+	
+	
+	
+	

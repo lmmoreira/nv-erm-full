@@ -1,0 +1,41 @@
+﻿ tela inicial com os aprovacoes  pendentes									--  16
+ interface, responsiva, usuarios.. menu, essa poha, separação				--	32				---- feito			
+*** 
+	funcionanidade de pendente, aprovado, rejeitado,para as visoes			-- 12
+	SEGURANÇA ACESSO														-- 8				---- feito
+ ***
+ tecnologia																	-- 8				---- feito
+ categoria																	-- 12				---- feito
+ processos especiais														-- 8				---- feito
+ fornecedores																-- 12				---- feito
+ usuario, grupo																-- 24				---- feito
+ ---
+	unidade -- para manufatura												-- 2				---- feito
+	unidade -- para projeto													-- 2				---- feito
+	unidade1 -- compras														-- 2				---- feito
+	unidade2 -- compras														-- 2				---- feito
+  **********************
+ visao da material master para  pessoal compras								-- 12 
+ visao da material master para  pessoal qualidade							-- 12
+ visao da material master para  pessoal projeto								-- 24
+ visao da material master para  pessoal manufatura							-- 12
+ ************
+modelagem banco																-- 16
+***************************************************************************************************************************	
+		216					-----				7560			3024		
+		12960
+***************************************************************************************************************************			
+
+Final
+ 
+14 760 - 246 horas
+130 horas
+R$ 8610
+R$ 3444
+59 contador
+nos 60 é -14% de 8610
+  
+ 
+
+ 
+

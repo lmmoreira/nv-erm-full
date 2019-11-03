@@ -1,0 +1,25 @@
+Email no Tomcat
+https://tomcat.apache.org/tomcat-7.0-doc/jndi-resources-howto.html
+
+
+
+There is no direct way to load a file from outside of servlet context in servlet or framework such as JSF. You can however provide the absolute folder path in the context param of web application and then read it from within your JSF bean
+
+<web-app>
+..................
+    <context-param>
+        <param-name>myfolderpath</param-name>
+        <param-value>D:/myfolder</param-value>
+    </context-param>
+..................
+</web-app>
+]
+and thereafter reading it
+
+FacesContext ctx = FacesContext.getCurrentInstance();
+String myConstantValue =
+    ctx.getExternalContext().getInitParameter("myfolderpath");
+
+Another approach is to pass your folder location in System properties while the server starts and then access it in your JSF bean.
+
+However this design should be looked into more carefully. Some good discussion on its demerits here and here

@@ -1,0 +1,21 @@
+Criação de Grupos Adicionais aos pedidos inicialmente com suas politicas especificas de segurança por todo o sistema
+	Engenharia Geral
+	Engenharia Material
+	Gerente Projeto
+	Gerente Manufatura
+Horas: 16 Horas
+
+Politica de segurança especifica de Processo Especial, onde é guardado o criador do registro e suas alterações especificas.
+Horas: 6 Horas
+
+Tela especifica para Materiais Pendentes, Aprovados e Rejeitados com suas especificas políticas de segurança para cada grupo
+Política de segurança e preenchimento/apenas visualização de campos de Edit Materiais conforme status do registro ou grupo de usuário 
+Política de aprovadores de materiais, onde mais de um usuário poderá aprovar um material
+Horas: 24 Horas
+
+Tela especifica para Fornecedores Pendentes, Aprovados e Rejeitados com suas especificas políticas de segurança para cada grupo.
+Processo de aprovação e rejeição de fornecedores.
+Política de segurança baseado em criador de registro.
+Política de aprovadores de materiais, onde mais de um usuário poderá aprovar um material
+Horas: 16 Horas
+

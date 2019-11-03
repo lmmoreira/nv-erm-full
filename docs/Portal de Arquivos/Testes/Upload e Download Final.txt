@@ -1,0 +1,88 @@
+public void buttonAction(ActionEvent actionEvent) {
+
+		PrintWriter writer = null;
+		try {
+			writer = new PrintWriter("c:\\test\\the-file-name.txt", "UTF-8");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		writer.println("The first line");
+		writer.println("The second line");
+		writer.close();
+	}
+
+	public void handleFileUpload(FileUploadEvent event) {
+		addMessage("Welcome to Primefaces!!");
+
+		try {
+			InputStream initialStream = event.getFile().getInputstream();
+			File targetFile = new File("c:\\test\\"
+					+ event.getFile().getFileName());
+			OutputStream outStream = new FileOutputStream(targetFile);
+
+			byte[] buffer = new byte[8 * 1024];
+			int bytesRead;
+			while ((bytesRead = initialStream.read(buffer)) != -1) {
+				outStream.write(buffer, 0, bytesRead);
+			}
+			IOUtils.closeQuietly(initialStream);
+			IOUtils.closeQuietly(outStream);
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+	public void addMessage(String summary) {
+		FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO,
+				summary, null);
+		FacesContext.getCurrentInstance().addMessage(null, message);
+	}
+
+	public StreamedContent getFile() {
+		String nome = "PNE_TS63_23052016.zip";
+		
+		try {
+			FileInputStream in = new FileInputStream(new File("c:\\test\\"+nome)); 
+			 return  new DefaultStreamedContent(in, "application/octet-stream", nome);
+		} catch (Exception e) {
+			// 
+		}
+		 	return null;
+	}
+	
+	
+	
+	
+	**********************************
+	
+	
+	
+		<p:commandButton value="Non-Ajax Submit" id="nonAjax" actionListener="#{mainController.buttonAction}" ajax="false" />
+    			
+    		
+ 						 <p:fileUpload 
+    			 		fileUploadListener="#{mainController.handleFileUpload}" 
+    			 		mode="advanced" 
+    			 		dragDropSupport="false"
+           				fileLimit="3" 
+           				 />
+           				 
+           				 <p:commandButton value="Download" ajax="false" onclick="PrimeFaces.monitorDownload(start, stop);" icon="ui-icon-arrowthick-1-s">
+        <p:fileDownload value="#{mainController.file}" />
+    </p:commandButton>
+    
+    <script type="text/javascript">
+function start() {
+    PF('statusDialog').show();
+}
+ 
+function stop() {
+    PF('statusDialog').hide();
+}
+</script>
